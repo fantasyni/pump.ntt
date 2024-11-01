@@ -1,0 +1,92 @@
+{
+  "name": "pump-ntt",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --force",
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@ant-design/web3": "^1.16.0",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@mui/icons-material": "^5.11.0",
+    "@mui/material": "^5.11.4",
+    "@mysten/bcs": "^1.0.4",
+    "@mysten/dapp-kit": "0.14.12",
+    "@mysten/move-bytecode-template": "^0.1.0",
+    "@mysten/sui": "1.3.0",
+    "@mysten/sui.js": "^0.32.2",
+    "@radix-ui/colors": "^3.0.0",
+    "@radix-ui/react-collapsible": "^1.1.1",
+    "@radix-ui/react-icons": "^1.3.0",
+    "@radix-ui/react-tooltip": "^1.1.3",
+    "@radix-ui/themes": "^3.1.1",
+    "@reduxjs/toolkit": "^1.9.1",
+    "@solana/spl-token": "^0.3.9",
+    "@solana/wallet-adapter-wallets": "^0.19.25",
+    "@solana/web3.js": "^1.95.2",
+    "@tanstack/react-query": "^5.50.1",
+    "@wormhole-foundation/sdk": "^0.12.0",
+    "@wormhole-foundation/sdk-icons": "^0.6.8",
+    "@wormhole-foundation/sdk-route-ntt": "^0.4.0",
+    "@wormhole-foundation/wormhole-connect": "1.0.0",
+    "@xlabs-libs/wallet-aggregator-aptos": "^0.0.1-alpha.14",
+    "@xlabs-libs/wallet-aggregator-core": "^0.0.1-alpha.18",
+    "@xlabs-libs/wallet-aggregator-cosmos": "^0.0.1-alpha.14",
+    "@xlabs-libs/wallet-aggregator-cosmos-evm": "^0.0.1-alpha.6",
+    "@xlabs-libs/wallet-aggregator-evm": "^0.0.2-alpha.0",
+    "@xlabs-libs/wallet-aggregator-sei": "^0.0.1-alpha.14",
+    "@xlabs-libs/wallet-aggregator-solana": "^0.0.1-alpha.15",
+    "@xlabs-libs/wallet-aggregator-sui": "^0.0.1-alpha.10",
+    "aptos": "1.5.0",
+    "axios": "0.18.1",
+    "moment": "^2.30.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-hot-toast": "^2.4.1",
+    "react-redux": "^8.0.5",
+    "react-router-dom": "^6.24.1",
+    "tss-react": "^4.7.7"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@types/react-redux": "^7.1.25",
+    "@typescript-eslint/eslint-plugin": "^6.1.0",
+    "@typescript-eslint/parser": "^6.1.0",
+    "@vitejs/plugin-react-swc": "^3.5.0",
+    "autoprefixer": "^10.4.19",
+    "eslint": "^8.45.0",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-react-refresh": "^0.4.7",
+    "postcss": "^8.4.39",
+    "prettier": "^3.3.2",
+    "tailwindcss": "^3.4.4",
+    "typescript": "^5.5.3",
+    "vite": "^5.3.1"
+  },
+  "main": "./dist/cjs/index.js",
+  "types": "./dist/cjs/index.d.ts",
+  "module": "./dist/esm/index.js",
+  "description": "SDK for SUI chains, used in conjunction with @wormhole-foundation/sdk",
+  "files": [
+    "dist/esm",
+    "dist/cjs"
+  ],
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/esm/index.d.ts",
+        "default": "./dist/esm/index.js"
+      },
+      "require": {
+        "types": "./dist/cjs/index.d.ts",
+        "default": "./dist/cjs/index.js"
+      }
+    }
+  }
+}
